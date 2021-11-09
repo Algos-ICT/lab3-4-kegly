@@ -3,7 +3,7 @@ n, k=map(int, f.readline().split())
 A=[int(i) for i in f.readline().split()]
 
 for i in range(len(A)):
-    for j in range(len(A) - i - 1):
+    for j in range(len(A) - i - k):
         if A[j] > A[j + k]:
             A[j], A[j + k] = A[j + k], A[j]
 
